@@ -1,18 +1,21 @@
-body{height:100%;
-    width:100%;
-    background-image:url(/images/Make_In_India_Logo.jpg);/*your background image*/
-    background-repeat:no-repeat;/*we want to have one single image not a repeated one*/
-    background-size:cover;/*this sets the image to fullscreen covering the whole screen*/
-    /*css hack for ie*/
-    overflow:hidden;
-    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.image.jpg',sizingMethod='scale');
-    -ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='image.jpg',sizingMethod='scale')";
+
+/*Setting background image*/
+#bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -5000;
 }
 
+/*Making modal centerised*/
 .modal {
     text-align: center;
 }
 
+
+/*prevent modal from disappering when click outside*/
 @media screen and (min-width: 768px) {
     .modal:before {
         display: inline-block;
@@ -27,3 +30,4 @@ body{height:100%;
     text-align: left;
     vertical-align: middle;
 }
+
