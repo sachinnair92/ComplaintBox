@@ -18,6 +18,10 @@
 </head>
 <body>
 
+
+
+
+
 <div align="center"><img src="images/Make_In_India_Logo.jpg" id="bg"></div>
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" data-backdrop="static" data-keyboard="false" role="dialog" aria-labelledby="myModalLabel">

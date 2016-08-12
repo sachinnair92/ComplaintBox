@@ -6,7 +6,8 @@ $('#myModal').modal({
     keyboard: false
 });
 
-$(window).load(function() {
+
+
     $(document).ready(function(){
         var flag = 1;
 
@@ -26,7 +27,7 @@ $(window).load(function() {
             }
         });
     });
-});
+
 
 
 

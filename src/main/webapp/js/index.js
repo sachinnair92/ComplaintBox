@@ -7,6 +7,7 @@ $('#myModal').modal({
 });
 
 
+
     $(document).ready(function(){
         var flag = 1;
 
@@ -26,6 +27,7 @@ $('#myModal').modal({
             }
         });
     });
+
 
 
 
