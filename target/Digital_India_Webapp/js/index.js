@@ -311,13 +311,17 @@ function login_ajax_call()
     $.ajax({
         'url' : 'https://complaintbox-server.herokuapp.com/api/Login/validate_user',
         'type' : 'GET',
+        async:false,
+        useDefaultXhrHeader: false,
         'data' : {
             'user_name' : uname,
             'password' : pass,
         },
         //The response from the server
         'success' : function(data) {
-            alert(data);
+            var obj = JSON.parse(data);
+
+            alert(obj.response);
         }
     });
 
