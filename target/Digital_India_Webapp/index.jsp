@@ -18,7 +18,7 @@
   <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
   <script type="text/javascript" src="js/index.js"></script>
 </head>
-<body>
+<body >
 
 
 
@@ -31,13 +31,13 @@
 <!------------------------------------------ Login Page----------------------------------------------------------------->
 
 
-<div class="modal fade" id="LoginModal" tabindex="-1" data-backdrop="static" data-keyboard="false" role="dialog" aria-labelledby="LoginModal">
+<div class="modal fade" style="overflow: auto" id="LoginModal" tabindex="-1" data-backdrop="static" data-keyboard="false" role="dialog" aria-labelledby="LoginModal">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h3 style="color: gray;text-align: center;" class="modal-title"><b>ComplaintBox</b></h3>
       </div>
-    <label class="modal-body">
+    <div class="modal-body">
       <h4 style="color: grey;margin-bottom: 3%" ><b>Login into Your Account</b></h4>
 
       <table  >
@@ -106,7 +106,7 @@
 
 <!------------------------------------------ Register Page----------------------------------------------------------------->
 
-<div class="modal fade" id="RegisterModal" tabindex="-1" data-backdrop="static" data-keyboard="false" role="dialog" aria-labelledby="RegisterModal">
+<div style="overflow: auto" class="modal fade" id="RegisterModal" tabindex="-1" data-backdrop="static" data-keyboard="false" role="dialog" aria-labelledby="RegisterModal">
 <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -189,10 +189,22 @@
           <label class="control-label" >Landline Number (Optional)</label>
           <input type="text"  class="form-control" id="r_landno" aria-describedby="inputSuccess2Status" onkeydown="registration_page_check_landno(event);" onblur="registration_page_check_landno('blur');">
         </div>
+        <div class="form-group  has-feedback" id="r_OTP_div"  style="width: 60%;margin-left: 20%; display: none">
+          <label class="control-label" >Verify OTP</label>
+          <label class="control-label" id ="r_OTP_text">(OTP has been sent to )</label>
+          <input type="text" onkeydown="r_verify_OTP(event);"   class="form-control" id="r_OTP" aria-describedby="inputSuccess2Status"  placeholder="One Time Password">
+          <span style="display: none ;" id="r_OTP_err" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+        </div>
 
         <br/>
         <div style="text-align: right">
-        <button type="button" style="margin-right:5%;width: 30%" class="btn btn-success">Register</button>
+          <button type="button" onclick="r_cancel_OTP();" id="r_cancelbutton" style="margin-right:5%;width: 30%;display: none" class="btn btn-success">Cancel</button>
+          <button type="button" onclick="r_verify_OTP('blur');" id="r_verifybutton" style="margin-right:5%;width: 30%;display: none" class="btn btn-success">Verify</button>
+        </div>
+        <br/>
+
+        <div style="text-align: right">
+        <button type="button" onclick="register_ajax_call();" id="r_button" style="margin-right:5%;width: 30%" class="btn btn-success">Register</button>
         </div>
         <br/><br/>
       </div>

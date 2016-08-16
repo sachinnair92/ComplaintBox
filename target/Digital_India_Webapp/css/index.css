@@ -15,6 +15,11 @@
 }
 
 
+.body{
+    overflow-x: auto;
+}
+
+
 /*prevent modal from disappering when click outside*/
 @media screen and (min-width: 768px) {
     .modal:before {
