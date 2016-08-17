@@ -31,17 +31,17 @@
 <!------------------------------------------ Login Page----------------------------------------------------------------->
 
 
-<div class="modal fade" style="overflow: auto" id="LoginModal" tabindex="-1" data-backdrop="static" data-keyboard="false" role="dialog" aria-labelledby="LoginModal">
+<div class="modal fade" style="overflow: auto;" id="LoginModal" tabindex="-1" data-backdrop="static" data-keyboard="false" role="dialog" aria-labelledby="LoginModal">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h3 style="color: gray;text-align: center;" class="modal-title"><b>ComplaintBox</b></h3>
       </div>
-    <div class="modal-body">
+    <div class="modal-body" >
       <h4 style="color: grey;margin-bottom: 3%" ><b>Login into Your Account</b></h4>
 
       <table  >
-        <th style="width: 55%">
+        <th >
 
 
 
@@ -80,15 +80,14 @@
 
             <table  >
               <th >
-                <% for (int i=0;i<3;i++){ %>
+                <% for (int i=0;i<4;i++){ %>
                 &nbsp;
                 <%}%>or
-
             </th>
-              <th>
-                <button type="button" onclick="go_to_reg_page();" style="margin-left: 20%;width: 130%" class="btn btn-warning">New Registration</button>
+              <th style="vertical-align: top">
+                <button type="button" onclick="go_to_reg_page();" style="margin-left: 20%;width: 27ch" class="btn btn-warning">New Registration</button>
                 <br/><br/>
-                <button type="button" style="margin-left: 20%;width: 130%" class="btn btn-info">Anonymous Complaint</button>
+                <button type="button" style="margin-left: 20%;width: 27ch" class="btn btn-info">Anonymous Complaint</button>
               </th>
               </table>
       </div>

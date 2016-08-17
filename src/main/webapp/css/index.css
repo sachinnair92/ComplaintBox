@@ -21,7 +21,7 @@
 
 
 /*prevent modal from disappering when click outside*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
     .modal:before {
         display: inline-block;
         vertical-align: middle;

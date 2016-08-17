@@ -7,10 +7,10 @@ $('#myModal').modal({
 });
 
 
- var base_url="https://complaintbox-server.herokuapp.com/api/";
+ /*var base_url="https://complaintbox-server.herokuapp.com/api/";*/
 
 
- /*var base_url="http://localhost:7001/api/";*/
+ var base_url="http://localhost:7001/api/";
 
     $(document).ready(function(){
         var flag = 1;
